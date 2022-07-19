@@ -379,6 +379,7 @@ html {
     width: 95vw; } }
 
 #splash-grid {
+  grid-template-columns: repeat(3, minmax(-webkit-min-content, 300px));
   grid-template-columns: repeat(3, minmax(min-content, 300px)); }
   #splash-grid .wpdgrid-square_inner a {
     border-radius: 0 14px; }
@@ -412,11 +413,13 @@ html {
 
 @media (max-width: 1360px) {
   #splash-grid {
+    grid-template-columns: repeat(3, minmax(-webkit-min-content, 250px));
     grid-template-columns: repeat(3, minmax(min-content, 250px));
     grid-template-rows: auto; } }
 
 @media (max-width: 991.98px) {
   #splash-grid {
+    grid-template-columns: repeat(2, minmax(-webkit-min-content, 300px));
     grid-template-columns: repeat(2, minmax(min-content, 300px));
     grid-template-rows: auto; } }
 
