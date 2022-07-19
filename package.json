@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "node-sass sass/main.scss output/style.css",
     "compile:sasstodo": "node-sass /home/todo/nextgen/sass/main.scss /var/www/html/style.css",
-    "compile:fix": "postcss --use autoprefixer --no-map -b 'last 20 versions' output/style.css -o output/style.fix.css",
+    "compile:fix": "postcss --use autoprefixer --no-map -b 'last 20 versions' output/style.css -o output/wpdstyle.fix.css",
     "compile:fixtodo": "postcss --use autoprefixer --no-map -b 'last 20 versions' /var/www/html/style.css -o /var/www/html/style.fix.css"
   },
   "author": "",
