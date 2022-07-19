@@ -1,0 +1,87 @@
+#splash-grid {
+  grid-template-columns: repeat(3, minmax(min-content, 300px));
+
+  .wpdgrid {
+
+    &-square {
+
+      &_inner {
+
+        & a {
+          border-radius: 0 14px;
+
+          &:hover,
+          &:focus {
+            .wpdgrid-square_inner-overlay {
+              transform: translate3d(0, 0, 0);
+
+              & h2 {
+                transform: translate3d(0, 0, 0);
+              }
+            }
+          }
+        }
+
+        &-overlay {
+          background-color: rgba(0, 0, 0, 0.5);
+          transition: transform 300ms;
+
+          &--label {
+            background-color: rgba(55, 78, 95, 1);
+            color: white;
+            font-size: 1rem;
+            font-size: clamp(0.5rem, .95rem, 1.5rem);
+            line-height: 1.4rem;
+          }
+
+          &--desc {
+            background: rgba(55, 78, 95, 0.8);
+            color: white;
+            font-size: 1.0rem;
+            font-size: clamp(0.8rem, 1.0rem, 1.2rem);
+            height: 5rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #splash-grid {
+
+    .wpdgrid-square_inner-overlay {
+      transform: translate3d(0, 0, 0);
+
+      & h2 {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}
+
+@media (max-width:1360px) {
+
+  #splash-grid {
+    grid-template-columns: repeat(3, minmax(min-content, 250px));
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width:991.98px) {
+
+  #splash-grid {
+    grid-template-columns: repeat(2, minmax(min-content, 300px));
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 600px) {
+
+  #splash-grid {
+    grid-template-columns: repeat(1, minmax(100px, 300px));
+    grid-template-rows: auto;
+  }
+}

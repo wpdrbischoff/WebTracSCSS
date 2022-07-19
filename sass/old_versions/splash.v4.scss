@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+#app {
+  width: 100vw;
+  height:100vh;
+}
+
+#app-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 3.7rem 1fr;
+  grid-gap: 0.5rem;
+
+  & #header {
+    & #header-top {
+      & #menu_primary {
+        margin: 0;
+
+        & #header-logo {
+          width: 60px;
+        }
+
+        & .menuitem {
+        font-size: .85rem;
+      }
+    }
+  }
+}
+
+  & #content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: 0;
+    justify-self: center;
+    width: 50vw;
+    max-width: 50vw;
+    min-height: 0;
+
+    & .inner {
+      padding: 0;
+
+      & #main {
+        height: 100%;
+
+            }
+    }
+
+    & overlay {
+      display: none;
+    }
+  }
+}
+
+.main-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(250px, 400px));
+  grid-template-rows: auto;
+  grid-gap: .5rem;
+
+  &_square {
+    display: grid;
+    overflow: hidden;
+    min-width: 0;
+    
+    &::before {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  
+    &-inner {
+			width: 100%;
+      height: 100%;
+      grid-area: 1 / 1 / 2 / 2;
+
+      &--desc {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.3);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+
+        & h2 {
+          color: white;
+          margin: 0px;
+          padding: 0px;
+          text-align: center;
+          text-shadow:
+              -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000,
+              1px 1px 0 #000;
+        }
+
+        & p {
+          color: white;
+          text-decoration: none;
+          text-align: center;
+          padding: 0;
+          margin: 2rem;
+        }
+      }
+
+      & a {
+        height: 100%;
+        width: 100%;
+        display: block;
+        background-size: cover;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width:1360px) {
+  #app-container #content {
+    width: 95vw;
+    max-width: 95vw;
+
+    & .inner {
+      & #main{
+        & .main-grid{
+          grid-template-columns: repeat(3, minmax(100px, 250px));
+          grid-template-rows: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:991.98px) {
+  #app-container #content {
+    width: 95vw;
+    max-width: 95vw;
+
+    & .inner {
+      & #main{
+        & .main-grid{
+          grid-template-columns: repeat(2, minmax(100px, 250px));
+          grid-template-rows: auto;
+        }
+      }
+    }
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #app-container {
+    display: block;
+
+     #content {
+      margin-left: auto;
+      margin-right: auto;
+
+      & .inner {
+        display: block;
+      }
+
+      #main{ 
+        display:none;
+      }
+
+      #vsi-footer {
+        display: none;
+      }
+    }
+  }
+}

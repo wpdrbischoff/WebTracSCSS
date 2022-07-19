@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+    width: 100vw;
+}
+
+#app-container {
+    & #content {
+        padding-left: .3rem;
+        margin: 0 auto;
+        min-height: 0;
+
+        & .inner {
+            display: block;
+            background-color: white;
+            border-radius: .5rem;
+            box-shadow: 3px 4px 13px 0px #888888;
+            margin: 1rem auto;
+            max-width: 95vw;
+            padding: 0;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 1.5rem;
+            padding-top: 1rem;
+            min-height: calc(100vh - 185px);
+
+            &:after {
+                display: none;
+            }
+
+            & #main {
+                height: 100%;
+                padding-top: 1rem;
+            }
+
+            & .twocolumn-layout {
+                margin: 0 auto;
+                // max-width: 55vw;
+                // width: 55vw;
+
+                #pmwebsearch_nextgengroup1 {
+                    display: none;
+                }
+
+                #arwebsearch_nextgengroup1>h1 {
+                    width: 10rem;
+                    right: 2rem;
+
+                    .collapse-icon {
+                        width: 100%;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        color: white;
+                        margin: 0 auto;
+
+                        .filter-button {
+                            font-size: .875rem;
+                            text-align: center;
+                        }
+
+                    }
+
+                    .filter-group-count {
+                        background: $wpddarkcolor;
+                    }
+                }
+
+                & .twocolumn-layout__right {
+                    max-width: 100%;
+                }
+
+                & .twocolumn-layout__left {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    & overlay {
+        display: none;
+    }
+}
+
+//media
+@media (max-width:1360px) {
+    #app-container #content {
+        margin: 0;
+
+        & .inner {
+            // max-width: 95vw;
+            // width: 95vw;
+
+            & .twocolumn-layout {
+                margin: 0;
+                // max-width: 95vw;
+                // width: 95vw;
+
+                & .twocolumn-layout__right {
+                    max-width: calc(100% - 250px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991.98px) {
+    #app-container #content {
+        margin: 0;
+
+        & .inner {
+            max-width: 95vw;
+            width: 95vw;
+
+            & .twocolumn-layout {
+                // max-width: 95vw;
+                // width: 95vw;
+
+                & .twocolumn-layout__right {
+                    max-width: 100%;
+                }
+
+                & .twocolumn-layout__left {
+                    .group__inner {
+                        background: $wpdlightcolor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #app-container #content {
+        margin: 0;
+
+        & .inner {
+            max-width: 95vw;
+            width: 95vw;
+
+            & .twocolumn-layout {
+                // max-width: 95vw;
+                // width: 95vw;
+
+                & .twocolumn-layout__right {
+                    max-width: 100%;
+                }
+
+                & .twocolumn-layout__left {
+                    .group__inner {
+                        background: $wpdlightcolor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    #app-container {
+        display: block;
+
+        #header-logo {
+            margin: 0 auto;
+        }
+
+        #menu_cart,
+        #menu_myaccount,
+        #menu_primary {
+            display: none;
+        }
+
+        #content {
+            margin-left: auto;
+            margin-right: auto;
+
+            .inner {
+                display: block;
+
+                .main-header {
+                    display: none;
+                }
+            }
+
+            #main {
+                display: none;
+            }
+        }
+
+        #footer {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+#footer {
+  position: absolute;
+  width: 100%;
+  padding: 1rem;
+
+  #footer-container {
+    display: none !important;
+  }
+
+  #vsi-footer {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  #browsers, #copyright {
+    margin: 0 1.5rem;
+  }
+}

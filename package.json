@@ -1,0 +1,18 @@
+{
+  "name": "nextgen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass /home/todo/nextgen/sass/main.scss /var/www/html/style.css",
+    "compile:fix": "postcss --use autoprefixer --no-map -b 'last 20 versions' /var/www/html/style.css -o /var/www/html/style.fix.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0"
+  }
+}
