@@ -17,12 +17,12 @@ html {
 }
 
 #app-container {
-    & #content {
+    #content {
         padding-left: .3rem;
         margin: 0 auto;
         min-height: 0;
 
-        & .inner {
+        .inner {
             display: block;
             background-color: white;
             border-radius: .5rem;
@@ -40,12 +40,12 @@ html {
                 display: none;
             }
 
-            & #main {
+            #main {
                 height: 100%;
                 padding-top: 1rem;
             }
 
-            & .twocolumn-layout {
+            .twocolumn-layout {
                 margin: 0 auto;
                 // max-width: 55vw;
                 // width: 55vw;
@@ -78,18 +78,18 @@ html {
                     }
                 }
 
-                & .twocolumn-layout__right {
+                .twocolumn-layout__right {
                     max-width: 100%;
                 }
 
-                & .twocolumn-layout__left {
+                .twocolumn-layout__left {
                     margin-right: 1rem;
                 }
             }
         }
     }
 
-    & overlay {
+    overlay {
         display: none;
     }
 }
@@ -99,16 +99,16 @@ html {
     #app-container #content {
         margin: 0;
 
-        & .inner {
+        .inner {
             // max-width: 95vw;
             // width: 95vw;
 
-            & .twocolumn-layout {
+            .twocolumn-layout {
                 margin: 0;
                 // max-width: 95vw;
                 // width: 95vw;
 
-                & .twocolumn-layout__right {
+                .twocolumn-layout__right {
                     max-width: calc(100% - 250px);
                 }
             }
@@ -120,19 +120,19 @@ html {
     #app-container #content {
         margin: 0;
 
-        & .inner {
+        .inner {
             max-width: 95vw;
             width: 95vw;
 
-            & .twocolumn-layout {
+            .twocolumn-layout {
                 // max-width: 95vw;
                 // width: 95vw;
 
-                & .twocolumn-layout__right {
+                .twocolumn-layout__right {
                     max-width: 100%;
                 }
 
-                & .twocolumn-layout__left {
+                .twocolumn-layout__left {
                     .group__inner {
                         background: $wpdlightcolor;
                     }
@@ -146,19 +146,19 @@ html {
     #app-container #content {
         margin: 0;
 
-        & .inner {
+        .inner {
             max-width: 95vw;
             width: 95vw;
 
-            & .twocolumn-layout {
+            .twocolumn-layout {
                 // max-width: 95vw;
                 // width: 95vw;
 
-                & .twocolumn-layout__right {
+                .twocolumn-layout__right {
                     max-width: 100%;
                 }
 
-                & .twocolumn-layout__left {
+                .twocolumn-layout__left {
                     .group__inner {
                         background: $wpdlightcolor;
                     }
