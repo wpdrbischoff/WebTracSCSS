@@ -1,0 +1,31 @@
+Bill Option Default
+-----
+<script language="JavaScript" type="text/javascript">
+$(function(){
+	
+	$("select[name=processingprompts_billingoption]").each(function(){
+		var $this = $(this);
+		$this.prepend('<option value="">--- Choose a payment plan option ---</option>');
+		$this.val("");
+	});
+
+	$("#processingprompts_billingoption_vm_4_button").each(function(){
+		var $this = $(this);
+		$this.prepend('<option value="">--- Choose a payment plan option ---</option>');
+		$this.val("");
+	});
+
+});
+</script>
+-----
+
+AR Search (hide items from Type Box
+-----
+<script language="JavaScript" type="text/javascript">
+$(function(){
+
+    $("li[title=Information]").css('display','none');
+
+});
+</script>
+-----

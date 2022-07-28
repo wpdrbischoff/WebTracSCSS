@@ -1,0 +1,114 @@
+<!-- But most of all, Doug is my hero -->
+
+<script>
+    $(function () {
+        if (App.settings.LoggedIn) {
+    
+            $('#menu_primary [role=menubar').append(`
+                <li role="menuitem" aria-haspopup="true">
+                    <a class="menuitem" href="https://register.wilmettepark.org/wbwsc/webtracdemo.wsc/history?historyoption=payold&amp;webhistory_search_begindate=01/01/2014.html">
+                        <span class="menuitem__subtitle"></span> 
+                        <span class="menuitem__title">
+                            <span class="menuitem__text hh-balance-kludge">HH Balance: </span>
+                        </span>
+                    </a>
+                </li>`);
+    
+            var bb_balance_menubar = $('.hh-balance-kludge')[0];
+    
+            $(bb_balance_menubar).append($('<span class="hh_balance">').load("history.html?historyoption=payold&webhistory_search_begindate=01/01/2014 td strong:last", 
+                function() {
+                    if (bb_balance_menubar.innerText == 'HH BALANCE:') {
+                        $('.hh-balance-kludge').hide();
+                    }
+    
+                  })
+                )
+    
+        } else {
+            $('.hh-balance-kludge')[0].hide();
+        }
+        
+    });
+</script>
+
+<div class="main-header">
+    <h1>Wilmette Park District Registration Portal</h1>
+</div>
+<div id="main" style="">
+
+    <div id="splash-grid" class="wpdgrid">
+        <div class="wpdgrid-square">
+            <div class="wpdgrid-square_inner">
+                <a href="https://wilmettepark.org/summer-2022-explore-online" target="_blank"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wpdnextgen/splash/main-grid_square--one/400x400.jpg&quot;)">
+                    <div class="wpdgrid-square_inner-overlay">
+                        <div class="wpdgrid-square_inner-overlay--label">Browse Fall Programs</div>
+                        <div class="wpdgrid-square_inner-overlay--desc">Browse all fall classes and special events
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="wpdgrid-square">
+            <div class="wpdgrid-square_inner">
+                <a href="search.html?module=PM&amp;type=aquatics&amp;search=Yes"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wpdnextgen/splash/main-grid_square--two/400x400.jpg&quot;)">
+                    <div class="wpdgrid-square_inner-overlay">
+                        <div class="wpdgrid-square_inner-overlay--label">Beach and Pool Passes</div>
+                        <div class="wpdgrid-square_inner-overlay--desc">Purchase or renew your season beach/pool pass
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="wpdgrid-square">
+            <div class="wpdgrid-square_inner">
+                <a href="search.html?module=PSS&keyword=aquatics&search=Yes"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wpdnextgen/splash/main-grid_square--three/400x400.jpg&quot;)">
+                    <div class="wpdgrid-square_inner-overlay">
+                        <div class="wpdgrid-square_inner-overlay--label">Gillson Parking Decals</div>
+                        <div class="wpdgrid-square_inner-overlay--desc">Purchase your decal to park between Memorial Day
+                            and Labor day</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="wpdgrid-square">
+            <div class="wpdgrid-square_inner">
+                <a href="splash.html?ccode=ngtssp"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wpdnextgen/splash/main-grid_square--four/400x400.jpg&quot;)">
+                    <div class="wpdgrid-square_inner-overlay">
+                        <div class="wpdgrid-square_inner-overlay--label">Performance and Event Tickets</div>
+                        <div class="wpdgrid-square_inner-overlay--desc">Purchase tickets for performances & select
+                            events here</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="wpdgrid-square">
+            <div class="wpdgrid-square_inner">
+                <a href="splash.html?ccode=ngrssp"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wpdnextgen/splash/main-grid_square--five/400x400.jpg&quot;)">
+                    <div class="wpdgrid-square_inner-overlay">
+                        <div class="wpdgrid-square_inner-overlay--label">Rentals and Reservations</div>
+                        <div class="wpdgrid-square_inner-overlay--desc">Rent kayaks or SUPS; reserve picnic area space
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="wpdgrid-square">
+            <div class="wpdgrid-square_inner">
+                <a href="splash.html?ccode=ngmssp"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wpdnextgen/splash/main-grid_square--six/400x400.jpg&quot;)">
+                    <div class="wpdgrid-square_inner-overlay">
+                        <div class="wpdgrid-square_inner-overlay--label">Memberships</div>
+                        <div class="wpdgrid-square_inner-overlay--desc">Purchase/Renew Fitness, Tennis, Golf, Ice &
+                            Platform Tennis Memberships</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
