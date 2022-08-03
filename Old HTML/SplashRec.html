@@ -1,0 +1,353 @@
+<!-- But most of all, Doug is my hero -->
+<style>
+    @media (max-width: 640px),
+    (max-height: 768px) {
+        .sp-full-page-images section .row {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tickets {
+            height: auto !important;
+        }
+    }
+
+    #content {
+        padding-left: 0px !important;
+    }
+
+    #login .row-parent {
+        height: 100%
+    }
+
+    .search-direct-links li a {
+        text-decoration: none !important;
+    }
+
+    .search-direct-links li a:hover {
+        text-decoration: underline !important;
+    }
+
+    #passes .section-inner.col-parent {
+        background-color: rgb(55, 78, 94)
+    }
+
+    .section-nav-previous , .section-nav-next {
+        display: none !important;
+    }
+
+    .sp-full-page-images section .row.card-parent {
+        max-width: 400px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row !important
+    }
+
+    .sp-full-page-images section .card li {
+        line-height: 21px !important;
+    }
+
+    .sp-full-page-images section a.card {
+        line-height: 28px !important;
+    }
+
+    .tickets .section-inner.col-parent {
+        height: 50%;
+    }
+
+    #passes .card.isImg {
+        border: 2px solid white !important;
+    }
+    #passes label {
+        font-size: 20px !important;
+    }
+    #shortcuts .card {
+        border: 2px solid black !important;
+    }
+</style>
+
+<link rel="stylesheet" href="<?VSI-StylePath?>full-page-images.css">
+
+<script src="<?VSI-ScriptPath?>full-page-images.js"></script>
+<!-- Memeber Login jquery-->
+<script language="JavaScript" type="text/javascript">
+    $(function () {
+        if (App.settings.LoggedIn) {
+            $('.member').show();
+            $('.guest').hide();
+        } else {
+            $('.member').hide();
+            $('.guest').show();
+        }
+    });
+</script>
+
+<div class="sp-full-page-images">
+    <!-- Login Section 1a -->
+    <section id="login" style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/banner1v3.jpg&quot;)">
+        <div class="col">
+            <div class="row guest">
+                <div>
+                    <div class="row card-parent">
+                        <div class="card">
+                            <form action="login.html?Action=process" method="post" autocomplete="off">
+                                <h2>Login</h2>
+                                <input type="text" name="Weblogin_username" placeholder="Username">
+                                <input type="password" name="weblogin_password" placeholder="Password">
+                                <button>Login</button>
+                                <a href="household.html?option=add" class="btn">Create Account</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row member">
+                <div>
+                    <div class="row card-parent">
+                        <div class="card">
+                            <h2>Welcome</h2>
+                            <ul>
+                                <li><a
+                                        href="report.html?option=householdcalendar&amp;output=email&amp;SessionID=<?VSI-SessionID?>">Print
+                                        a Calendar of your activities</a></li>
+                                <li><a
+                                        href="report.html?option=webchildcarestatement&amp;output=email&amp;SessionID=<?VSI-SessionID?>">Print
+                                        a Childcare statement</a></li>
+                                <li><a href="history.html?historyoption=payold&amp;SessionID=<?VSI-SessionID?>">Make
+                                        payments</a></li>
+                                <li><a href="reprint.html?option=receipt&amp;SessionID=<?VSI-SessionID?>">Reprint
+                                        Previous Receipts</a></li>
+                                <li><a href="account.html?SessionID=<?VSI-SessionID?>">Change your User Name or
+                                        Password</a></li>
+                                <li><a href="billingupdate.html?SessionID=<?VSI-SessionID?>">View/Update Auto Debit Info</a>
+                                </li>
+                                <li><a href="household.html?option=update">Camper Information Forms</a></li>
+                                <li><a href="reprint.html?option=ticket&amp;SessionID=<?VSI-SessionID?>">Reprint a
+                                        Ticket</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a class="card" href="https://wilmettepark.org/summer-2022-explore-online"
+                    style="background-size: 100% 100%;background-image: url(&quot;<?VSI-ImagePath?>wilmette/22.DistrictWide.Summer.Explorer.jpg&quot;)">
+                    <label>Browse Summer Programs</label>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="card">
+                    <ul class="search-direct-links">
+                        <li><a href="search.html?module=AR&amp;type=a50&amp;search=Yes">Mallinckrodt Adults 21+</a></li>
+                        <li><a href="search.html?module=AR&amp;type=asclb&amp;search=Yes">After School Clubs</a></li>
+                        <li><a href="search.html?module=AR&amp;type=arts&amp;search=Yes">Art</a></li>
+                        <li><a href="search.html?module=AR&amp;type=camp&amp;search=Yes">Camps</a></li>
+                        <li><a href="search.html?module=AR&amp;type=dance&amp;search=Yes">Dance</a></li>
+                        <li><a href="search.html?module=AR&amp;type=echd&amp;type=chldc&amp;search=Yes">Early
+                                Childhood Center</a></li>
+                        <li><a href="search.html?module=AR&amp;type=fitne&amp;search=Yes">Center Fitness Club</a></li>
+                        <li><a href="search.html?module=AR&amp;type=etc&amp;search=Yes">General Recreation</a></li>
+                        <li><a href="search.html?module=AR&amp;type=golf&amp;search=Yes">Golf</a></li>
+                        <li><a href="search.html?module=AR&amp;type=gymna&amp;search=Yes">Gymnastics</a></li>
+                        <li><a href="search.html?module=AR&amp;type=ice&amp;search=Yes">Ice Skating</a></li>
+                        <li><a href="search.html?module=AR&amp;type=paddl&amp;search=Yes">Platform Tennis</a></li>
+                        <li><a href="search.html?module=AR&amp;type=sail&amp;type=swim&amp;search=Yes">Sailing &amp;
+                                Aquatics</a></li>
+                        <li><a href="search.html?module=AR&amp;type=sport&amp;search=Yes">Sports</a></li>
+                        <li><a href="search.html?module=AR&amp;type=tenni&amp;search=Yes">Tennis</a></li>
+                        <li><a href="search.html?module=AR&amp;type=perfa&amp;search=Yes">Theater &amp; Music</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <a class="card" href="search.html?module=AR&amp;search=Yes"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/SearchIcon.svg&quot;)">
+                    <label>Search Activities</label>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Activity Section 2a -->
+    <section id="activity" style="background-color: #374E5E;">
+        <div class="col">
+            <div class="row">
+                <a class="card" href="https://wilmettepark.org/district-news"
+                    style="background-size: 100% 100%; background-image: url(&quot;<?VSI-ImagePath?>wilmette/DistrictNews.jpg&quot;)">
+                    <label>District News</label>
+                </a>
+            </div>
+
+            <div class="row">
+                <a class="card"
+                    href="search.html?display=detail&amp;module=AR&amp;keyword=FreestyleSkate&amp;search=yes#arwebsearch_group2"
+                    style="background-size: 100% 100%;background-image: url(&quot;<?VSI-ImagePath?>wilmette/20.DistrictWide.FreestyleSkate.jpg&quot;)">
+                    <label style="font-size: 19px !important">Freestyle Skate Timeblocks</label>
+                </a>
+            </div>
+        </div>
+        <div id="shortcuts" class="col">
+            <div class="row">
+                <a style="background-color: rgb(210,235,232);" href="#passes" class="card">
+                    <h3>
+                        <center>MEMBERSHIPS & PASSES</center>
+                    </h3>
+                </a>
+            </div>
+            <div class="row">
+                <a style="background-color: rgb(210,235,232);" href="#tickets" class="card">
+                    <h3>
+                        <center>PERFORMANCE & EVENT TICKETS</center>
+                    </h3>
+                </a>
+            </div>
+            <div class="row">
+                <a style="background-color: rgb(210,235,232);" href="splash.html?ccode=glmap" class="card">
+                    <h3>
+                        <center>GILLSON PICNIC AREA RESERVATIONS</center>
+                    </h3>
+                </a>
+            </div>
+            <div class="row">
+                <a style="background-color: rgb(210,235,232);" href="donation.html" class="card">
+                    <h3>
+                        <center>DONATIONS</center>
+                    </h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Pass Section 3a -->
+    <section id="passes" style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/banner2.jpg&quot;)">
+        <div class="col">
+            <div class="row">
+                <a class="card" href="search.html?module=PM&amp;type=aquatics&amp;search=Yes"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/22.DIstrictWide.AquaticsPassesv2.jpg&quot;)">
+                    <label>Aquatics Passes</label>
+                </a>
+            </div>
+            <div class="row">
+                <a class="card" href="search.html?module=PM&amp;type=mallinckrodt&amp;search=Yes"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/mallinckrodt1.jpg&quot;)">
+                    <label>Mallinckrodt Memberships</label>
+                </a>
+            </div>
+            <div class="row">
+                <a class="card" href="search.html?module=PM&amp;type=tennis&amp;search=Yes"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/TENNIS.jpg&quot;)">
+                    <label>Tennis Club Memberships</label>
+                </a>
+            </div>
+            <div class="row">
+                <a class="card" href="https://wilmettepark.org/platform-tennis-membership"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/PADDLE1.jpg&quot;)">
+                    <label>Platform Tennis Memberships</label>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <a class="card" href="search.html?module=PSS&amp;keyword=aquatics&amp;search=Yes"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/LakefrontParkingStickerSPLASH.jpg&quot;)">
+                    <label>Gillson Parking Decals</label>
+                </a>
+            </div>
+            <div class="row">
+                <a class="card" href="search.html?module=PM&amp;type=ice&amp;search=Yes"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/ICE1.jpg&quot;)">
+                    <label>Ice Passes</label>
+                </a>
+            </div>
+            <div class="row">
+                <a class="card" href="http://golfwilmette.com/request-membership/"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/GOLF1.jpg&quot;)">
+                    <label>Golf Memberships</label>
+                </a>
+            </div>
+           <div class="row">
+                <a class="card" href="https://wilmettepark.org/fitness-club-memberships"
+                    style="background-image: url(&quot;<?VSI-ImagePath?>wilmette/FITNESS2.jpg&quot;)">
+                    <label>Fitness Memberships</label>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Ticket Section 4a -->
+    <!-- Temp one-time direct linked show -->
+   <section id='tickets' class='tickets' style='background-color: #5ab5a9; height: 50vh;'>
+                <!--
+            <div class='col'>
+
+                <div class='row'>
+                    <a class='card' style='display:none;'></a>
+                </div>
+                <div class='row'>
+                    <a class='card' href='splash.html?ccode=spwct#content'
+                        style='background-size: 100% 100%;background-image: url("<?VSI-ImagePath?>tickets/Splash.Generic.ChildrensTheater.jpg")'>
+                        <label>Childrens Theater</label>
+                    </a>
+                </div>
+                <div class='row'>
+                    <a class='card' style='display:none;'></a>
+                </div>
+            </div>
+                        -->
+            <div class='col'>
+                <!--
+                <div class='row'>
+                    <a class='card' style='display:none;'></a>
+                </div>
+            -->
+                <div class='row' style="max-width: 100%;">
+                    <a class='card' href='splash.html?ccode=spice'
+                        style='background-image: url("<?VSI-ImagePath?>wilmette/22.Ice.IceShow.jpg")'>
+                        <label>Ice Show</label>
+                    </a>
+                    <a class='card' href='splash.html?ccode=spwct#content'
+                    style='background-size: 100% 100%;background-image: url("<?VSI-ImagePath?>tickets/Splash.Generic.ChildrensTheater.jpg")'>
+                    <label>Fairytail Lane</label>
+                </a>
+                <a class='card' href='splash.html?ccode=spdnc'
+                style='background-size: 100% 100%;background-image: url("<?VSI-ImagePath?>/wilmette/DANCESHOW1.jpg")'>
+                <label>Dance</label>
+                </a>
+                </div>
+            <!--
+                <div class='row'>
+                    <a class='card' style='display:none;'></a>
+                </div>
+            </div> -->
+            <!--
+            <div class='col'>
+
+                <div class='row'>
+                    <a class='card' style='display:none;'></a>
+                </div>
+                <div class='row'>
+                    <a class='card' href='splash.html?ccode=spwct#content'
+                        style='background-size: 100% 100%;background-image: url("<?VSI-ImagePath?>tickets/Splash.Generic.ChildrensTheater.jpg")'>
+                        <label>Childrens Theater</label>
+                    </a>
+                </div>
+                <div class='row'>
+                    <a class='card' style='display:none;'></a>
+                </div>
+            </div>
+            <div class='col'>
+                <div class='row'>
+                    <a class='card' style='display:none;'></a>
+                </div>
+
+                <div class='row'>
+                    <a class='card' href='splash.html?ccode=spdnc'
+                        style='background-size: 100% 100%;background-image: url("<?VSI-ImagePath?>/wilmette/DANCESHOW1.jpg")'>
+                        <label>Dance</label>
+                    </a>
+                </div>
+                <div class='row'>
+                    <a class='card' style='display:none;'></a>
+                </div>
+            </div> -->
+    </section>
+</div>
