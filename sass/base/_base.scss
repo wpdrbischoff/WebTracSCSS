@@ -9,6 +9,12 @@
 html {
     box-sizing: border-box;
     height: 100%;
+
+    .checkbox {
+        box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+        background-color: #ebe8e8;
+        border-radius: 1px;
+    }
 }
 
 #app {
