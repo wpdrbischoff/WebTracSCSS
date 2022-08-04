@@ -1,5 +1,5 @@
 search.html module=AR 
-
+================================================================================================================
 <script language="JavaScript" type="text/javascript">
 $(function(){
     var filterbutton = document.querySelector("#arwebsearch_nextgengroup1 > h1 > button")

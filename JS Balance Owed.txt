@@ -1,0 +1,31 @@
+<script>
+    $(function () {
+        if (App.settings.LoggedIn) {
+    
+            $('#menu_primary [role=menubar').append(`
+                <li role="menuitem" aria-haspopup="true">
+                    <a class="menuitem" href="https://register.wilmettepark.org/wbwsc/webtracdemo.wsc/history?historyoption=payold&amp;webhistory_search_begindate=01/01/2014.html">
+                        <span class="menuitem__subtitle"></span> 
+                        <span class="menuitem__title">
+                            <span class="menuitem__text hh-balance-kludge">HH Balance: </span>
+                        </span>
+                    </a>
+                </li>`);
+    
+            var bb_balance_menubar = $('.hh-balance-kludge')[0];
+    
+            $(bb_balance_menubar).append($('<span class="hh_balance">').load("history.html?historyoption=payold&webhistory_search_begindate=01/01/2014 td strong:last", 
+                function() {
+                    if (bb_balance_menubar.innerText == 'HH BALANCE:') {
+                        $('.hh-balance-kludge').hide();
+                    }
+    
+                  })
+                )
+    
+        } else {
+            $('.hh-balance-kludge')[0].hide();
+        }
+        
+    });
+</script>
