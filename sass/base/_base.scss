@@ -84,6 +84,38 @@ html {
                     }
                 }
 
+                #arwebsearch_output_table {
+                    .itemstatus {
+                        padding-left: 0;
+                        margin-right:0;
+
+                        &::before {
+                            content: none !important;
+                        }
+                    }
+
+                    .button.cart-button {
+                        &.success {
+                            border-color: #528f52;
+                            background: #72c472;
+                        }
+                        
+                        &.warning {
+                            border-color: #cc9c3d;
+                            background: #ffb31a;
+                        }
+                       
+                        &.error {
+                            border-color: #a9000b;
+                            background: #e60013;
+
+                            &::before {
+                                background-color: var(--primary-text-color) !important;
+                            }
+                        }
+                    }
+                }
+
                 .twocolumn-layout__right {
                     max-width: 100%;
                 }
