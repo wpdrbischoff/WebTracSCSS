@@ -1,0 +1,72 @@
+#app-container {
+    .twocolumn-layout {
+
+        #arwebsearch_nextgengroup1 {
+            
+            [title^='Information'], 
+            [title^='Play Safe at Wilmette'], 
+            [title^='Wellness'], 
+            [title^='Childcare'], 
+            [data-value^='Explore Golf'], 
+            [data-value^='Golf'], 
+            [data-value^='LeagueHistory'] {
+                display: none !important;
+            }
+            
+            &>h1 {
+                width: 10rem;
+                right: 2rem;
+
+                .collapse-icon {
+                    width: 100%;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    color: white;
+                    margin: 0 auto;
+
+                    .filter-button {
+                        font-size: .875rem;
+                        text-align: center;
+                    }
+                }
+
+                .filter-group-count {
+                    background: $wpddarkcolor;
+                }
+            }
+
+            #arwebsearch_output_table {
+                .itemstatus {
+                    padding-left: 0;
+                    margin-right: 0;
+
+                    &::before {
+                        content: none !important;
+                    }
+                }
+
+                .button.cart-button {
+                    &.success {
+                        border-color: #528f52;
+                        background: #72c472;
+                    }
+
+                    &.warning {
+                        border-color: #cc9c3d;
+                        background: #ffb31a;
+                    }
+
+                    &.error {
+                        border-color: #a9000b;
+                        background: #e60013;
+
+                        &::before {
+                            background-color: var(--primary-text-color) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

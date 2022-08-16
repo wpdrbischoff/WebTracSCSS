@@ -53,67 +53,9 @@ html {
 
             .twocolumn-layout {
                 margin: 0 auto;
-                // max-width: 55vw;
-                // width: 55vw;
 
                 #pmwebsearch_nextgengroup1 {
                     display: none;
-                }
-
-                #arwebsearch_nextgengroup1>h1 {
-                    width: 10rem;
-                    right: 2rem;
-
-                    .collapse-icon {
-                        width: 100%;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        color: white;
-                        margin: 0 auto;
-
-                        .filter-button {
-                            font-size: .875rem;
-                            text-align: center;
-                        }
-
-                    }
-
-                    .filter-group-count {
-                        background: $wpddarkcolor;
-                    }
-                }
-
-                #arwebsearch_output_table {
-                    .itemstatus {
-                        padding-left: 0;
-                        margin-right:0;
-
-                        &::before {
-                            content: none !important;
-                        }
-                    }
-
-                    .button.cart-button {
-                        &.success {
-                            border-color: #528f52;
-                            background: #72c472;
-                        }
-                        
-                        &.warning {
-                            border-color: #cc9c3d;
-                            background: #ffb31a;
-                        }
-                       
-                        &.error {
-                            border-color: #a9000b;
-                            background: #e60013;
-
-                            &::before {
-                                background-color: var(--primary-text-color) !important;
-                            }
-                        }
-                    }
                 }
 
                 .twocolumn-layout__right {
@@ -138,13 +80,9 @@ html {
         margin: 0;
 
         .inner {
-            // max-width: 95vw;
-            // width: 95vw;
 
             .twocolumn-layout {
                 margin: 0;
-                // max-width: 95vw;
-                // width: 95vw;
 
                 .twocolumn-layout__right {
                     max-width: calc(100% - 250px);
@@ -163,8 +101,6 @@ html {
             width: 95vw;
 
             .twocolumn-layout {
-                // max-width: 95vw;
-                // width: 95vw;
 
                 .twocolumn-layout__right {
                     max-width: 100%;
@@ -189,8 +125,6 @@ html {
             width: 95vw;
 
             .twocolumn-layout {
-                // max-width: 95vw;
-                // width: 95vw;
 
                 .twocolumn-layout__right {
                     max-width: 100%;
