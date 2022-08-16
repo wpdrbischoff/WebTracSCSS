@@ -1,0 +1,10 @@
+arwebsingleicon_group1
+
+
+$(enrollmentcounts_info).append($('<div>').load("iteminfo.html?Module=AR&FMID=163347895&option=enrollmentcounts"
+
+
+iteminfo.html?Module=AR&FMID=163347895&option=enrollmentcounts
+
+
+$('.item-info__content').append($('<div class="test">').load("iteminfo.html?Module=AR&FMID=163347895&option=enrollmentcounts #arwebsingleicon_group1"));
