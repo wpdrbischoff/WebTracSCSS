@@ -1,4 +1,5 @@
 #app-container {
+    
     .twocolumn-layout {
 
         #arwebsearch_nextgengroup1 {
@@ -12,7 +13,7 @@
             [data-value^='LeagueHistory'] {
                 display: none !important;
             }
-            
+
             &>h1 {
                 width: 10rem;
                 right: 2rem;
@@ -37,6 +38,7 @@
             }
 
             #arwebsearch_output_table {
+
                 .itemstatus {
                     padding-left: 0;
                     margin-right: 0;
