@@ -420,49 +420,49 @@ html {
     grid-template-columns: repeat(1, minmax(100px, 300px));
     grid-template-rows: auto; } }
 
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 [title^='Information'],
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 [title^='Play Safe at Wilmette'],
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 [title^='Wellness'],
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 [title^='Childcare'],
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 [data-value^='Explore Golf'],
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 [data-value^='Golf'],
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 [data-value^='LeagueHistory'] {
+#app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 [title^='Information'],
+#app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 [title^='Play Safe at Wilmette'],
+#app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 [title^='Wellness'],
+#app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 [title^='Childcare'],
+#app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 [data-value^='Explore Golf'],
+#app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 [data-value^='Golf'],
+#app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 [data-value^='LeagueHistory'] {
   display: none !important; }
 
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 > h1 {
+#app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 > h1 {
   width: 10rem;
   right: 2rem; }
-  #app-container .twocolumn-layout #arwebsearch_nextgengroup1 > h1 .collapse-icon {
+  #app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 > h1 .collapse-icon {
     width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     color: white;
     margin: 0 auto; }
-    #app-container .twocolumn-layout #arwebsearch_nextgengroup1 > h1 .collapse-icon .filter-button {
+    #app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 > h1 .collapse-icon .filter-button {
       font-size: .875rem;
       text-align: center; }
-  #app-container .twocolumn-layout #arwebsearch_nextgengroup1 > h1 .filter-group-count {
+  #app-container #content .inner .twocolumn-layout #arwebsearch_nextgengroup1 > h1 .filter-group-count {
     background: #374e5f; }
 
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 #arwebsearch_output_table .itemstatus {
+#app-container #content .inner .twocolumn-layout #arwebsearch_output_table .itemstatus {
   padding-left: 0;
   margin-right: 0; }
-  #app-container .twocolumn-layout #arwebsearch_nextgengroup1 #arwebsearch_output_table .itemstatus::before {
+  #app-container #content .inner .twocolumn-layout #arwebsearch_output_table .itemstatus::before {
     content: none !important; }
 
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 #arwebsearch_output_table .button.cart-button.success {
+#app-container #content .inner .twocolumn-layout #arwebsearch_output_table .button.cart-button.success {
   border-color: #528f52;
   background: #72c472; }
 
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 #arwebsearch_output_table .button.cart-button.warning {
+#app-container #content .inner .twocolumn-layout #arwebsearch_output_table .button.cart-button.warning {
   border-color: #cc9c3d;
   background: #ffb31a; }
 
-#app-container .twocolumn-layout #arwebsearch_nextgengroup1 #arwebsearch_output_table .button.cart-button.error {
+#app-container #content .inner .twocolumn-layout #arwebsearch_output_table .button.cart-button.error {
   border-color: #a9000b;
   background: #e60013; }
-  #app-container .twocolumn-layout #arwebsearch_nextgengroup1 #arwebsearch_output_table .button.cart-button.error::before {
+  #app-container #content .inner .twocolumn-layout #arwebsearch_output_table .button.cart-button.error::before {
     background-color: var(--primary-text-color) !important; }
 
 #footer {
